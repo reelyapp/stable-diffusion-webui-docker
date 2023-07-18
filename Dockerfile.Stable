@@ -17,7 +17,7 @@ RUN pip3 install --upgrade pip
 RUN pip install xformers==0.0.16
 RUN pip install triton==2.0.0
 RUN pip install numexpr
-
+RUN pip install torchmetrics==0.11.4
 
 RUN git clone -b v2.0 https://github.com/camenduru/stable-diffusion-webui
 ADD --chown=user https://raw.githubusercontent.com/camenduru/stable-diffusion-webui-scripts/main/run_n_times.py /content/stable-diffusion-webui/scripts/run_n_times.py
